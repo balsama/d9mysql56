@@ -1,0 +1,22 @@
+uuid: 49e37c77-80d2-4af2-a99b-0dd8c09800bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - umami
+_core:
+  default_config_hash: hwPGi0Da9zOozalnzJ_sBJNI1Z1iM8nQQGhux08_-kM
+id: help
+theme: umami
+region: highlighted
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
