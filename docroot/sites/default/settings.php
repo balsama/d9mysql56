@@ -763,3 +763,4 @@ if (file_exists('/var/www/site-php')) {
 
 $settings['config_sync_directory'] = '../config_sync/';
 $databases['default']['default']['namespace'] = 'Drupal\\Driver\\Database\\mysql';
+$settings["file_temp_path"] = "/mnt/tmp/nightlyworkflowgtr6myn587"
