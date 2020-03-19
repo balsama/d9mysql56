@@ -4,10 +4,10 @@
     "description": "Sample project that runs Drupal 9 with mysql56.",
     "license": "GPL-2.0-or-later",
     "require": {
-        "drupal/core-recommended": "^8.8",
+        "composer/installers": "^1.7",
         "cweagans/composer-patches": "^1.6.0",
         "drupal/core-composer-scaffold": "*",
-        "composer/installers": "^1.7"
+        "drupal/core-recommended": "^8.8"
     },
     "require-dev": {
         "drush/drush": "^9.0 || ^10.0"
