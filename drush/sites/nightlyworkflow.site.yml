@@ -1,0 +1,48 @@
+# Application 'nightlyworkflow', environment 'dev'.
+dev:
+  root: /var/www/html/nightlyworkflow.dev/docroot
+  ac-site: nightlyworkflow
+  ac-env: dev
+  ac-realm: devcloud
+  uri: nightlyworkflowgtr6myn587.devcloud.acquia-sites.com
+  dev.livedev:
+    parent: '@nightlyworkflow.dev'
+    root: /mnt/gfs/nightlyworkflow.dev/livedev/docroot
+  host: nightlyworkflowgtr6myn587.ssh.devcloud.acquia-sites.com
+  user: nightlyworkflow.dev
+  paths:
+    drush-script: drush9
+
+
+# Application 'nightlyworkflow', environment 'prod'.
+prod:
+  root: /var/www/html/nightlyworkflow.prod/docroot
+  ac-site: nightlyworkflow
+  ac-env: prod
+  ac-realm: devcloud
+  uri: nightlyworkflowvrcrx4t4gf.devcloud.acquia-sites.com
+  prod.livedev:
+    parent: '@nightlyworkflow.prod'
+    root: /mnt/gfs/nightlyworkflow.prod/livedev/docroot
+  host: nightlyworkflowvrcrx4t4gf.ssh.devcloud.acquia-sites.com
+  user: nightlyworkflow.prod
+  paths:
+    drush-script: drush9
+
+
+# Application 'nightlyworkflow', environment 'test'.
+test:
+  root: /var/www/html/nightlyworkflow.test/docroot
+  ac-site: nightlyworkflow
+  ac-env: test
+  ac-realm: devcloud
+  uri: nightlyworkflowrqehwcxuca.devcloud.acquia-sites.com
+  test.livedev:
+    parent: '@nightlyworkflow.test'
+    root: /mnt/gfs/nightlyworkflow.test/livedev/docroot
+  host: nightlyworkflowrqehwcxuca.ssh.devcloud.acquia-sites.com
+  user: nightlyworkflow.test
+  paths:
+    drush-script: drush9
+
+
