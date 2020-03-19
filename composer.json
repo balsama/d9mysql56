@@ -1,0 +1,55 @@
+{
+    "name": "acquia/sample-d9-msql56-project",
+    "type": "project",
+    "description": "Sample project that runs Drupal 9 with mysql56.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "drupal/core-recommended": "^8.8",
+        "cweagans/composer-patches": "^1.6.0",
+        "drupal/core-composer-scaffold": "*",
+        "composer/installers": "^1.7"
+    },
+    "require-dev": {
+        "drush/drush": "^9.0 || ^10.0"
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "docroot/"
+            }
+        },
+        "enable-patching": true,
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "patchLevel": {
+            "drupal/core-recommended": "-p2"
+        }
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
