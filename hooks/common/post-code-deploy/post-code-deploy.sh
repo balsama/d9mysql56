@@ -8,8 +8,3 @@ site="$1"
 target_env="$2"
 
 /usr/local/bin/drush9 --version
-/usr/local/bin/drush9 @$site.$target_env cache-rebuild --yes
-/usr/local/bin/drush9 @$site.$target_env updatedb --yes
-/usr/local/bin/drush9 @$site.$target_env cache-rebuild --yes
-/usr/local/bin/drush9 @$site.$target_env config-import --no-interaction
-/usr/local/bin/drush9 @$site.$target_env cache-rebuild --yes
