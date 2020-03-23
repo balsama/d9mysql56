@@ -1,4 +1,4 @@
-  #!/bin/sh
+#!/bin/sh
 #
 # Cloud Hook: Rebuild the cache and run any pending database updates.
 #
